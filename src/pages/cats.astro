@@ -1,0 +1,23 @@
+---
+import CatFact from "../components/CatFact";
+import "../styles/global.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Dev Project</title>
+	</head>
+	<body>
+		<h1 class="font-bold text-3xl m-5">Backend Intro - Get a Cat Fact</h1>
+        <!-- This calls our React Component which needs to have 'client' load so that the request works in real time!
+         Try seeing what happens if you remove the client load-->
+        <CatFact client:load/>
+		
+	</body>
+</html>
+
+<style>
+</style>
